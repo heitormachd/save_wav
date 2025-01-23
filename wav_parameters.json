@@ -1,0 +1,17 @@
+{   
+    "hd_id": 1,
+    "json_filename": "/run/media/heitor/BCKHD1/aquisicao_40km_50ns_21_10_2024/aquisicao_40km_50ns_21_10_2024.json",
+    "input_foldername": "/home/heitor/Documentos/input",
+    "output_foldername": "/home/heitor/Documentos/output",
+
+    "start_time": "19/10/2024 15:20:18",
+    "end_time": "19/10/2024 15:22:18",
+
+    "filter": "True",
+    "f_min": 10.0,
+    "f_max": 449.9,
+
+    "audio_speed": 5,
+    "spec_position": ["local", [1500]]
+
+}
