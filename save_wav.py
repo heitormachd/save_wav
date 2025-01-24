@@ -32,12 +32,9 @@ filter = data.get('filter')
 
 spatial_downsampling_factor = 10
 
-spatial_start_list = ["null", 1, 30000, 10000, 65000]
-spatial_end_list = ["null", 40000, 70000, 60000, 115000]
+spatial_length_list = ["null", 40, 40, 50, 50]
 
-spatial_start = spatial_start_list[hd_id]
-spatial_end = spatial_end_list[hd_id]
-
+spatial_length = spatial_length_list[hd_id]
 
 def butter_bandpass(data, fmin, fmax, fs, order=4, axis=1):
 
@@ -72,7 +69,7 @@ for i in range(len(indices)):
     time_start = indices[i][0]
     time_end = indices[i][1]
    
-    data = np.load(f'{input_foldername}/m_ds{spatial_downsampling_factor}_{spatial_start}m_{spatial_end}m_{time_start}_{time_end}.npy')
+    data = np.load(f'{input_foldername}/HD{hd_id}_ds{spatial_downsampling_factor}_{spatial_length}km_100s_{time_start}_{time_end}.npy')
     data = data.T
 
     ### AQUISITION PARAMETERS ###
